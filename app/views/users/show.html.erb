@@ -1,0 +1,18 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @user.name %>
+</p>
+
+<p>
+  <strong>Device:</strong>
+  <%= @user.device %>
+</p>
+
+<h1>You are better of with an <%= @device %>!</h1>
+
+<a href="https://twitter.com/share?text=I am a more ideal <%= @device %> user." class="twitter-share-button" data-lang="en" data-count="none">Tweet</a>
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>
